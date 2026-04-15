@@ -1,0 +1,9 @@
+services:
+  api:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      RAPIDCRAWL_APP_ENV: production
+      RAPIDCRAWL_REQUEST_TIMEOUT_SECONDS: 12
+      RAPIDCRAWL_MAX_COMPETITOR_URLS: 5
